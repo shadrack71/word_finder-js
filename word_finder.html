@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word finder</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(32, 31, 49);
+        }
+        h1,h2{
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .container{
+            
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            background-color: rgb(83, 72, 137);
+            border-radius: 5px;
+
+        }
+        form{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            
+        }
+        textarea{
+            margin: 40px;
+            width: 80%;
+            height: 80%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        textarea:focus{
+            outline:2px solid rgb(240, 50, 50);
+
+        }
+        #finder{
+            width: 40%;
+            height: 25px;
+            margin: 20px;
+            padding: 2px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+
+        }
+        #finder:focus{
+            outline:2px solid rgb(240, 50, 50);
+
+        }
+        button{
+            text-align: center;
+            text-transform: uppercase;
+            width: 20%;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: orangered;
+        }
+        #result_text{
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            
+        }
+        .colorErr{
+            color: red;
+        }
+        .border_p{
+            border: 2px solid black;
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>wordd/text finder application</h1>
+    
+    <form id="form_input">
+        <textarea id="body_text" placeholder="insert the words/paragraphs to be search on"></textarea>
+        <input type="text" id="finder" placeholder="enter the text/words">
+        <button type="button" id="btn">find</button>
+
+    </form>
+    <h2>result paragraphs</h2>
+    <p id="result_text"></p>
+</div>
+    <script src="word_finder_script.js"></script>
+</body>
+</html>
